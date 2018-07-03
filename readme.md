@@ -16,19 +16,19 @@ That being said, feel free to clone or fork this repo and change it to suit your
 
 These scripts should work if executed in any order and are independent of each other.
 
-- [install.bat]() - installs my main apps from Chocolatey, Windows Store and web links and also remove provisions and uninstalls unwanted apps.
-- [reg-notepad.reg]() - registers notepad as a possible editor for ANY file type on right click.
-- [reg-unblock.reg]() - adds a command to the mouse right that allows to unlock multiple files or folders at once (usefull for downloaded stuff).
+- [install.bat](install.bat) - installs my main apps from Chocolatey, Windows Store and web links and also remove provisions and uninstalls unwanted apps.
+- [reg-notepad.reg](reg-notepad.reg) - registers notepad as a possible editor for ANY file type on right click.
+- [reg-unblock.reg](reg-unblock.reg) - adds a command to the mouse right that allows to unlock multiple files or folders at once (usefull for downloaded stuff).
 
 ## license
 
-This project is licensed under the MIT License - see the [LICENSE.md]() file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## some history and acknowledgments
 
 The inicial version of theses scripts were created by me circa 2014 and stored in a folder at my personal OneDrive. I started with the registry files and later began using a .bat file to install apps from Chocolatey.org.
 
-Recently, inspired by [https://github.com/Microsoft/windows-dev-box-setup-scripts](), I started improving my script to try and add Windows Store apps and remove some junk/unwanted apps that come on new installs of Windows 10.
+Recently, inspired by [https://github.com/Microsoft/windows-dev-box-setup-scripts](https://github.com/Microsoft/windows-dev-box-setup-scripts), I started improving my script to try and add Windows Store apps and remove some junk/unwanted apps that come on new installs of Windows 10.
 
 After a LOT or research I realized that that are no automation apis for the Windows Store (not yet anyway), so I opened an issue asking to [Make is possible to install apps from the Store](https://github.com/Microsoft/windows-dev-box-setup-scripts/issues/30) and decided to start versioning my scripts here, so I can properly keep track of the changes I make.
 
