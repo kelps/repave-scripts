@@ -1,34 +1,21 @@
 @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 
 choco install 7zip -y
-@pause
 choco install kdiff3 -y
-@pause
 choco install filezilla -y
-@pause
 choco install fiddler -y
-@pause
 choco install postman -y
-@pause
 choco install soapui -y
-@pause
 choco install webpi -y
-@pause
-@echo "MVC 3"
+
+@REM MVC 3
 choco install aspnetmvc.install -y
-@pause
 choco install googlechrome -y
-@pause
 choco install firefox -y
-@pause
 choco install opera -y
-@pause
-choco install -y linkshellextension --ignore-checksums
-@pause
+choco install -y linkshellextension
 choco install blender -y
-@pause
 choco install cura -y
-@pause
 choco install audacity -y
 
 @echo Openning apps directly in the Windows Store app
@@ -55,6 +42,11 @@ start "" ms-windows-store://pdp/?ProductId=9NKSQGP7F2NH @REM WhatsApp desktop
 start "" ms-windows-store://pdp/?ProductId=9WZDNCRDMDM3 @REM Nuget Package Explorer
 @pause
 
+start "" ms-windows-store://pdp/?ProductId=9NBLGGH35LRM @REM Affinity Designer
+@pause
+start "" ms-windows-store://pdp/?ProductId=9NBLGGH35LXN @REM Affinity Photo
+@pause
+
 start "" ms-windows-store://pdp/?ProductId=CFQ7TTC0K5DM @REM Office 365 Home
 @REM start "" ms-windows-store://pdp/?ProductId=CFQ7TTC0K5F3 @REM Excel 2016
 @REM start "" ms-windows-store://pdp/?ProductId=CFQ7TTC0K5D7 @REM Word 2016
@@ -74,8 +66,13 @@ start "" ms-windows-store://pdp/?ProductId=9N8H1T7MZC7W @REM BrowserStack
 start "" ms-windows-store://pdp/?ProductId=9MSPC6MP8FM4 @REM Microsoft Whiteboard
 
 start "" https://www.microsoft.com/en-us/sql-server/sql-server-editions-express @REM SQL Express
+@REM look into https://chocolatey.org/packages/sql-server-express
+
 start "" https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms @REM SQL Management Studio
+@REM look into https://chocolatey.org/packages/sql-server-management-studio
+
 start "" https://www.visualstudio.com/downloads/ @REM Visual Studio Enterprise
+@REM look into https://chocolatey.org/packages/visualstudio2017enterprise
 
 @echo Remove unwanted pre-installed apps
 @powershell -NoProfile -ExecutionPolicy Bypass -Command "$AppList = @('*Disney*', '*king.com*', '*HiddenCity*', '*DolbyLaboratories*', '*Microsoft.MicrosoftOfficeHub*', '*Microsoft.BingNews*', '*getstarted*', '*gethelp*', '*bingfinance*', '*sports*', '*adobe*', '*Microsoft.DrawboardPDF*', '*facebook*', '*bethesda*', '*farmville*'); foreach ($App in $AppList) { Get-AppxPackage -Name $App | Remove-AppxPackage }"
