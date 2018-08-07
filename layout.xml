@@ -1,0 +1,44 @@
+<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+  <LayoutOptions StartTileGroupCellWidth="8" />
+  <DefaultLayoutOverride>
+    <StartLayoutCollection>
+      <defaultlayout:StartLayout GroupCellWidth="8">
+        <start:Group Name="Create">
+          <start:Tile Size="4x2" Column="0" Row="2" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
+          <start:Tile Size="4x2" Column="2" Row="0" AppUserModelID="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!Microsoft.WindowsLive.Mail" />
+          <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.Office.OneNote_8wekyb3d8bbwe!microsoft.onenoteim" />
+          <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!Microsoft.WindowsLive.Calendar" />
+        </start:Group>
+        <start:Group Name="Play">
+          <start:Tile Size="1x1" Column="1" Row="2" AppUserModelID="SpotifyAB.SpotifyMusic_zpdnekdrzrea0!Spotify" />
+          <start:Tile Size="1x1" Column="3" Row="0" AppUserModelID="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
+          <start:Tile Size="1x1" Column="2" Row="0" AppUserModelID="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
+          <start:Tile Size="4x2" Column="4" Row="0" AppUserModelID="6205NextMatters.NextgenReader_dhevqfrzdz4vg!App" />
+          <start:Tile Size="1x1" Column="1" Row="3" AppUserModelID="5319275A.WhatsAppDesktop_cv1g1gvanyjgm!WhatsAppDesktop" />
+          <start:Tile Size="1x1" Column="2" Row="1" AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+          <start:Tile Size="2x2" Column="6" Row="2" AppUserModelID="Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe!App" />
+          <start:Tile Size="4x2" Column="2" Row="2" AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
+          <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.XboxApp_8wekyb3d8bbwe!Microsoft.XboxApp" />
+          <start:Tile Size="1x1" Column="3" Row="1" AppUserModelID="Microsoft.WindowsMaps_8wekyb3d8bbwe!App" />
+          <start:Tile Size="1x1" Column="0" Row="2" AppUserModelID="Microsoft.SkypeApp_kzf8qxf38zg5c!App" />
+          <start:Tile Size="1x1" Column="0" Row="3" AppUserModelID="Microsoft.Office.Desktop_8wekyb3d8bbwe!Lync" />
+        </start:Group>
+        <start:Group Name="Explore">
+          <start:Tile Size="2x2" Column="0" Row="2" AppUserModelID="Microsoft.MSPaint_8wekyb3d8bbwe!Microsoft.MSPaint" />
+          <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.InkFont_8wekyb3d8bbwe!App" />
+          <start:Tile Size="2x2" Column="2" Row="2" AppUserModelID="Icons8LLC.Lunacy_7g68zyg4rddyp!App" />
+          <start:Tile Size="4x2" Column="0" Row="0" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+          <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+        </start:Group>
+        <start:Group Name="">
+          <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="SerifEuropeLtd.AffinityPhoto_844sdzfcmm7k0!SerifEuropeLtd.AffinityPhoto" />
+          <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="SerifEuropeLtd.AffinityDesigner_844sdzfcmm7k0!SerifEuropeLtd.AffinityDesigner" />
+          <start:Tile Size="4x2" Column="4" Row="0" AppUserModelID="4480Purgar.Traktor_rcqgwygp9rqkm!App" />
+          <start:Tile Size="4x2" Column="0" Row="2" AppUserModelID="89006A2E.AutodeskSketchBook_tf1gferkr813w!App" />
+          <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.Whiteboard_8wekyb3d8bbwe!Whiteboard" />
+          <start:Tile Size="2x2" Column="6" Row="2" AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!SecondaryEntry" />
+        </start:Group>
+      </defaultlayout:StartLayout>
+    </StartLayoutCollection>
+  </DefaultLayoutOverride>
+</LayoutModificationTemplate>

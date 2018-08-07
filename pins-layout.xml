@@ -1,0 +1,89 @@
+<LayoutModificationTemplate
+  xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+  xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" 
+  xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" 
+  xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout" 
+  Version="1">
+  <LayoutOptions StartTileGroupCellWidth="8" />
+  <DefaultLayoutOverride>
+    <StartLayoutCollection>
+      <defaultlayout:StartLayout GroupCellWidth="8">
+        <start:Group Name="Life at a glance">
+          <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Facebook.Facebook_8xx8rvfyw5nnt!App" />
+          <start:Tile Size="2x2" Column="6" Row="6" AppUserModelID="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
+          <start:SecondaryTile AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" TileID="7573742610" DisplayName="" Size="2x2" Column="4" Row="6" Arguments="-contentTile -formatVersion 0x00000003 -pinnedTimeLow 0xc7f79797 -pinnedTimeHigh 0x01d2547a -securityFlags 0x00000000 -tileType 0x00000000 -url 0x00000029 http://kelps-server:32400/web/index.html#" Square150x150LogoUri="ms-appdata:///local/PinnedTiles/7573742610/lowres.png" Wide310x150LogoUri="ms-appx:///" ShowNameOnSquare150x150Logo="true" ShowNameOnWide310x150Logo="false" BackgroundColor="#ff393937" ForegroundText="light" />
+          <start:Tile Size="4x2" Column="2" Row="2" AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
+          <start:DesktopApplicationTile Size="2x2" Column="0" Row="2" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\MOD-t\MOD-t printer utility.lnk" />
+          <start:Tile Size="2x2" Column="6" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+          <start:Tile Size="2x2" Column="0" Row="6" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
+          <start:Tile Size="2x2" Column="6" Row="2" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+          <start:Tile Size="2x2" Column="2" Row="6" AppUserModelID="Microsoft.Office.Sway_8wekyb3d8bbwe!Microsoft.Sway" />
+        </start:Group>
+        <start:Group Name="Play and explore">
+          <start:DesktopApplicationTile Size="2x2" Column="4" Row="6" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\TechSmith\Camtasia 9.lnk" />
+          <start:DesktopApplicationTile Size="2x2" Column="0" Row="6" DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Blender\blender.lnk" />
+          <start:Tile Size="2x2" Column="2" Row="4" AppUserModelID="microsoft.microsoftskydrive_8wekyb3d8bbwe!App" />
+          <start:Tile Size="4x4" Column="4" Row="0" AppUserModelID="6205NextMatters.NextgenReader_dhevqfrzdz4vg!App" />
+          <start:Tile Size="2x2" Column="2" Row="6" AppUserModelID="Microsoft.Office.OneNote_8wekyb3d8bbwe!microsoft.onenoteim" />
+          <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.XboxApp_8wekyb3d8bbwe!Microsoft.XboxApp" />
+          <start:Tile Size="2x2" Column="2" Row="2" AppUserModelID="Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe!App" />
+          <start:Tile Size="2x2" Column="0" Row="4" AppUserModelID="D5BA6BCD.OpenLiveWriter_7g8mfyn71hpbp!OpenLiveWriter" />
+          <start:Tile Size="2x2" Column="6" Row="6" AppUserModelID="Microsoft.MicrosoftSudoku_8wekyb3d8bbwe!App" />
+          <start:Tile Size="4x2" Column="4" Row="4" AppUserModelID="4480Purgar.Traktor_rcqgwygp9rqkm!App" />
+          <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
+          <start:Tile Size="2x2" Column="0" Row="2" AppUserModelID="4DF9E0F8.Netflix_mcm4njqhnhss8!Netflix.App" />
+        </start:Group>
+        <start:Group Name="">
+          <start:Tile Size="2x2" Column="6" Row="2" AppUserModelID="SerifEuropeLtd.AffinityPhoto_844sdzfcmm7k0!SerifEuropeLtd.AffinityPhoto" />
+          <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Microsoft Corporation\Microsoft Teams.lnk" />
+          <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.MicrosoftEdgeDevToolsPreview_8wekyb3d8bbwe!App" />
+          <start:Tile Size="2x2" Column="2" Row="2" AppUserModelID="Microsoft.SkypeApp_kzf8qxf38zg5c!App" />
+          <start:SecondaryTile AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" TileID="23379990500" DisplayName="" Size="2x2" Column="0" Row="2" Arguments="-contentTile -formatVersion 0x00000003 -pinnedTimeLow 0x4cb5a698 -pinnedTimeHigh 0x01d41a02 -securityFlags 0x00000000 -tileType 0x00000000 -url 0x00000042 https://www.google.com/maps/@-23.6085815,-46.6850218,14z?force=pwa" Square150x150LogoUri="ms-appdata:///local/PinnedTiles/23379990500/lowres.png" Wide310x150LogoUri="ms-appx:///" ShowNameOnSquare150x150Logo="true" ShowNameOnWide310x150Logo="false" BackgroundColor="#ff13783d" ForegroundText="light" />
+          <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="17540MichaelScidone.uTorrentClient_8wyshmwpt86bp!App" />
+          <start:SecondaryTile AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" TileID="15538900120" DisplayName="" Size="2x2" Column="6" Row="0" Arguments="-contentTile -formatVersion 0x00000003 -pinnedTimeLow 0x4578c6a9 -pinnedTimeHigh 0x01d41a02 -securityFlags 0x00000000 -tileType 0x00000000 -url 0x0000005f https://www.windowscentral.com/google-photos-pwa-review-not-quite-progressive-and-not-quite-app" Square150x150LogoUri="ms-appdata:///local/PinnedTiles/15538900120/squaretile.png" Wide310x150LogoUri="ms-appdata:///local/PinnedTiles/15538900120/widetile.png" ShowNameOnSquare150x150Logo="true" ShowNameOnWide310x150Logo="true" BackgroundColor="#ffed2e8e" ForegroundText="light" />
+          <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="SerifEuropeLtd.AffinityDesigner_844sdzfcmm7k0!SerifEuropeLtd.AffinityDesigner" />
+        </start:Group>
+      </defaultlayout:StartLayout>
+    </StartLayoutCollection>
+  </DefaultLayoutOverride>
+  <CustomTaskbarLayoutCollection PinListPlacement="Replace">
+    <defaultlayout:TaskbarLayout>
+      <taskbar:TaskbarPinList >
+        <taskbar:UWA AppUserModelID="" />
+        <taskbar:UWA AppUserModelID="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail" />
+        <taskbar:UWA AppUserModelID="6205NextMatters.NextgenReader_dhevqfrzdz4vg!App" />
+        <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
+        <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+        <!--chrome
+        ie
+        firefox
+        opera
+        <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdgeDevToolsPreview_8wekyb3d8bbwe!App" />
+        VS
+        SQL Express
+        IIS
+        Fiddler
+        Postman
+        SOAP UI
+        Filezilla
+        Excel
+        <taskbar:UWA AppUserModelID="SerifEuropeLtd.AffinityDesigner_844sdzfcmm7k0!SerifEuropeLtd.AffinityDesigner" />
+        <taskbar:UWA AppUserModelID="SerifEuropeLtd.AffinityPhoto_844sdzfcmm7k0!SerifEuropeLtd.AffinityPhoto" />
+
+        Skype Business
+        <taskbar:UWA AppUserModelID="Microsoft.SkypeApp_kzf8qxf38zg5c!App" />
+        WhatsApp
+        Telegram
+
+        <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Blender\blender.lnk" />
+        Cura
+        <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\MOD-t\MOD-t printer utility.lnk" />
+
+        Plex
+        Sonar
+        Radar
+        Synology-->
+      </taskbar:TaskbarPinList>
+    </defaultlayout:TaskbarLayout>
+  </CustomTaskbarLayoutCollection>
+</LayoutModificationTemplate>
