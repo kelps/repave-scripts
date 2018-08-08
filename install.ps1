@@ -2,12 +2,28 @@
 #https://boxstarter.org/Learn/WebLauncher
 
 function Move-Libraries {
-	Write-BoxtarterMessage "Moving libraries to the 'D:' drive"
+	if (Test-Path d:) {
+		Write-BoxtarterMessage "Moving libraries to the 'D:' drive"
 
-	Move-LibraryDirectory "Desktop" "D:\Desktop" -DoNotMoveOldContent
-	Move-LibraryDirectory "Downloads" "D:\Downloads" -DoNotMoveOldContent
-	Move-LibraryDirectory "My Pictures" "D:\OneDrive\Imagens" -DoNotMoveOldContent
-	Move-LibraryDirectory "My Music" "D:\OneDrive\Music" -DoNotMoveOldContent
+		if (!(Test-Path D:\Desktop)) {
+			New-Item -ItemType Directory -Path D:\Desktop
+		}
+		Move-LibraryDirectory "Desktop" "D:\Desktop" 
+
+		if (!(Test-Path D:\Downloads)) {
+			New-Item -ItemType Directory -Path D:\Downloads
+		}
+		Move-LibraryDirectory "Downloads" "D:\Downloads" -DoNotMoveOldContent
+
+		if (Test-Path D:\OneDrive\Images) {
+			Move-LibraryDirectory "My Pictures" "D:\OneDrive\Imagens" -DoNotMoveOldContent
+		}
+		if (Test-Path D:\OneDrive\Music) {
+			Move-LibraryDirectory "My Music" "D:\OneDrive\Music" -DoNotMoveOldContent
+		}
+	} else {
+		Write-BoxtarterMessage "No D: drive available"
+	}
 }
 
 function Apply-File-Explorer-Settings {
@@ -168,6 +184,7 @@ choco install linkshellextension -y
 choco install blender -y
 choco install cura -y
 choco install audacity -y
+#TODO: create appx for Mod-T app with the bridge creator and install it 
 
 choco install googlechrome -y
 choco install firefox -y
@@ -205,7 +222,7 @@ pause
 start-process ms-windows-store://pdp/?ProductId=9WZDNCRDMDM3 # Nuget Package Explorer
 pause
 Start-Process ms-windows-store://pdp/?ProductId=9MZBFRMZ0MNJ # Microsoft Edge DevTools Preview
-
+pause
 start-process ms-windows-store://pdp/?ProductId=9NBLGGH35LRM # Affinity Designer
 pause
 start-process ms-windows-store://pdp/?ProductId=9NBLGGH35LXN # Affinity Photo
@@ -241,14 +258,15 @@ Start-Process ms-windows-store://pdp/?ProductId=9N5TDP8VCMHS # Web Media Extensi
 
 
 start-process https://www.microsoft.com/en-us/sql-server/sql-server-editions-express # SQL Express
-# look into https://chocolatey.org/packages/sql-server-express
+# look into using https://chocolatey.org/packages/sql-server-express
 
 start-process https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms # SQL Management Studio
-# look into https://chocolatey.org/packages/sql-server-management-studio
+# look into using https://chocolatey.org/packages/sql-server-management-studio
 
 start-process https://www.visualstudio.com/downloads/ # Visual Studio Enterprise
-# look into https://chocolatey.org/packages/visualstudio2017enterprise
+# look into using https://chocolatey.org/packages/visualstudio2017enterprise
 
+Write-BoxtarterMessage "Wait for SQL Server, SQL Management Studio and Visual Studio to finish installing before continuing"
 pause
 
 Apply-Start-Taskbar-Layout
