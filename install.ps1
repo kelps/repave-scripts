@@ -181,7 +181,7 @@ choco install webpi -y
 choco install aspnetmvc.install -y
 
 choco install linkshellextension -y
-choco install blender -y
+#choco install blender -y
 choco install cura -y
 choco install audacity -y
 #TODO: create appx for Mod-T app with the bridge creator and install it 
@@ -226,6 +226,8 @@ pause
 start-process ms-windows-store://pdp/?ProductId=9NBLGGH35LRM # Affinity Designer
 pause
 start-process ms-windows-store://pdp/?ProductId=9NBLGGH35LXN # Affinity Photo
+pause
+start-process ms-windows-store://pdp/?ProductId=9PP3C07GTVRH # Blender 3D
 pause
 
 start-process ms-windows-store://pdp/?ProductId=CFQ7TTC0K5DM # Office 365 Home
