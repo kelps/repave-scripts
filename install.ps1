@@ -174,14 +174,14 @@ choco install kdiff3 -y
 choco install filezilla -y
 choco install fiddler -y
 choco install postman -y
-choco install soapui -y
+#choco install soapui -y
 choco install webpi -y
 
 # MVC 3
 choco install aspnetmvc.install -y
 
-choco install linkshellextension -y
-#choco install blender -y
+choco install linkshellextension -y --ignore-checksum
+choco install blender -y
 choco install cura -y
 choco install audacity -y
 #TODO: create appx for Mod-T app with the bridge creator and install it 
