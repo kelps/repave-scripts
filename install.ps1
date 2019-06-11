@@ -162,6 +162,7 @@ function Unprovision-Unwanted-Store-Apps {
 Disable-UAC
 
 Disable-BingSearch
+#set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name "BingSearchEnabled" -Type DWord -Value 0
 
 Disable-GameBarTips
 
