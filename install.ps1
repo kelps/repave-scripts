@@ -182,7 +182,7 @@ choco install webpi -y
 choco install aspnetmvc.install -y
 
 choco install linkshellextension -y --ignore-checksum
-choco install blender -y
+#choco install blender -y
 choco install cura -y
 choco install audacity -y
 #TODO: create appx for Mod-T app with the bridge creator and install it 
@@ -190,6 +190,7 @@ choco install audacity -y
 choco install googlechrome -y
 choco install firefox -y
 choco install opera -y
+choco install microsoft-edge-insider-dev -y
 
 Install-Windows-Features
 
@@ -236,27 +237,27 @@ start-process ms-windows-store://pdp/?ProductId=CFQ7TTC0K5DM # Office 365 Home
 # start-process ms-windows-store://pdp/?ProductId=CFQ7TTC0K5D7 # Word 2016
 # start-process ms-windows-store://pdp/?ProductId=CFQ7TTC0K5CT # PowerPoint 2016
 pause
-Start-Process ms-windows-store://pdp/?ProductId=CFQ7TTC0K569 # Skype for Business 2016
-pause
+# Start-Process ms-windows-store://pdp/?ProductId=CFQ7TTC0K569 # Skype for Business 2016
+# pause
 Start-Process ms-windows-store://pdp/?ProductId=9WZDNCRFJ364 # Skype
 pause
 
-start-process ms-windows-store://pdp/?ProductId=9NBLGGH4R9NZ # AdBlock Plus
-pause
-start-process ms-windows-store://pdp/?ProductId=9NZ9D2J86W6S # JSON Formatter for Edge
-pause
-start-process ms-windows-store://pdp/?ProductId=9NBLGGH4QWS7 # Page Analyzer
-pause
-start-process ms-windows-store://pdp/?ProductId=9PBGQPBGBFH5 # Web Developer Checklist
-pause
-start-process ms-windows-store://pdp/?ProductId=9N8H1T7MZC7W # BrowserStack
-pause
+# start-process ms-windows-store://pdp/?ProductId=9NBLGGH4R9NZ # AdBlock Plus
+# pause
+# start-process ms-windows-store://pdp/?ProductId=9NZ9D2J86W6S # JSON Formatter for Edge
+# pause
+# start-process ms-windows-store://pdp/?ProductId=9NBLGGH4QWS7 # Page Analyzer
+# pause
+# start-process ms-windows-store://pdp/?ProductId=9PBGQPBGBFH5 # Web Developer Checklist
+# pause
+# start-process ms-windows-store://pdp/?ProductId=9N8H1T7MZC7W # BrowserStack
+# pause
 start-process ms-windows-store://pdp/?ProductId=9MSPC6MP8FM4 # Microsoft Whiteboard
 pause
 Start-Process ms-windows-store://pdp/?ProductId=9NBLGGH4SKZW # Desktop App Converter
 pause 
-Start-Process ms-windows-store://pdp/?ProductId=9WZDNCRDFXZS # Wunderlist
-pause
+# Start-Process ms-windows-store://pdp/?ProductId=9WZDNCRDFXZS # Wunderlist
+# pause
 Start-Process ms-windows-store://pdp/?ProductId=9N5TDP8VCMHS # Web Media Extensions
 
 
@@ -267,7 +268,7 @@ start-process https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-mana
 # look into using https://chocolatey.org/packages/sql-server-management-studio
 
 start-process https://www.visualstudio.com/downloads/ # Visual Studio Enterprise
-# look into using https://chocolatey.org/packages/visualstudio2017enterprise
+# look into using https://chocolatey.org/packages/visualstudio2019enterprise
 
 Write-BoxtarterMessage "Wait for SQL Server, SQL Management Studio and Visual Studio to finish installing before continuing"
 pause
