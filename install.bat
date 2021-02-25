@@ -4,7 +4,7 @@ choco install 7zip -y
 choco install kdiff3 -y
 choco install filezilla -y
 choco install fiddler -y
-choco install postman -y
+@REM choco install postman -y
 choco install soapui -y
 choco install webpi -y
 
@@ -21,6 +21,8 @@ choco install audacity -y
 @echo Openning apps directly in the Windows Store app
 @REM https://docs.microsoft.com/en-us/windows/uwp/launch-resume/launch-store-app 
 
+start "" ms-windows-store://pdp/?ProductId=9N2T6F9F5ZDN @REM Nightingale REST Client
+@pause
 start "" ms-windows-store://pdp/?ProductId=9NBLGGH4VZW5 @REM Autodesk Sketchbook
 @pause
 start "" ms-windows-store://pdp/?ProductId=9WZDNCRFJ262 @REM Nextgen Reader
