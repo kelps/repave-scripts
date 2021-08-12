@@ -50,7 +50,7 @@ start "" ms-windows-store://pdp/?ProductId=9NBLGGH35LXN @REM Affinity Photo
 @pause
 
 @REM start "" ms-windows-store://pdp/?ProductId=CFQ7TTC0K5DM @REM Office 365 Home
-@REM start "" ms-windows-store://pdp/?ProductId=CFQ7TTC0K7KX @REM Excel
+@REM start "" ms-windows-store://pdp/?ProductId=CFQ7TTC0K7DX @REM Excel
 @REM @pause
 @REM start "" ms-windows-store://pdp/?ProductId=CFQ7TTC0K7C7 @REM Word 2016
 @REM @pause
