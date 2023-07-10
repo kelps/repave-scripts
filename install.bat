@@ -1,6 +1,8 @@
 @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 
 @REM fix windows datetime sync settings
+@REM https://superuser.com/questions/1116938/w32time-the-computer-did-not-resync-because-no-time-data-was-available#1194892
+@REM https://support.ntp.org/Support/WindowsTimeService
 w32tm /config /update /manualpeerlist:"0.pool.ntp.org,0x8 1.pool.ntp.org,0x8 2.pool.ntp.org,0x8 3.pool.ntp.org,0x8" /syncfromflags:MANUAL
 
 choco install 7zip -y
